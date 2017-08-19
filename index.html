@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background:url("img/赌桌.jpg");
+            background-size: cover;
+        }
+        .table{
+            width:700px;
+            height:700px;
+            margin:20px auto 0;
+            position:relative;
+        }
+        .table .poke{
+            width:90px;
+            height:150px;
+            position: absolute;
+            left:30px;
+            top:0;
+            background-size: contain;
+        }
+        .active{
+            border:1px solid white;
+        }
+        [class^=move]{
+            width:80px;
+            height:30px;
+            border-radius: 3px;
+            background:#ccc;
+            position:absolute;
+            left:300px;
+            top:550px;
+            text-align: center;
+            line-height: 30px;
+            cursor:pointer;
+        }
+        [class=moveR]{
+            top:600px;
+        }
+    </style>
+</head>
+<body>
+<div class="table">
+    <div class="moveL"> < </div>
+    <div class="moveR"> > </div>
+</div>
+</body>
+</html>
+<script src="jquery-3.2.1.js"></script>
+<script src="扑克牌.js"></script>
